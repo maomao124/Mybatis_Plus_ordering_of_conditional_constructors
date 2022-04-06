@@ -36,8 +36,14 @@ import static org.junit.jupiter.api.Assertions.*;
  * 例: orderByDesc("id", "name") ---> order by id DESC,name DESC
  */
 
+
 class StudentMapperTest
 {
+    /**
+     * Order by.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void orderBy() throws IOException
     {
@@ -64,6 +70,11 @@ class StudentMapperTest
         sqlSession.close();
     }
 
+    /**
+     * Order by 1.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void orderBy1() throws IOException
     {
@@ -91,6 +102,11 @@ class StudentMapperTest
     }
 
 
+    /**
+     * Order by asc.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void orderByAsc() throws IOException
     {
@@ -117,6 +133,11 @@ class StudentMapperTest
         sqlSession.close();
     }
 
+    /**
+     * Order by desc.
+     *
+     * @throws IOException the io exception
+     */
     @Test
     public void orderByDesc() throws IOException
     {
